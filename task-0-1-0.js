@@ -1,11 +1,13 @@
-var s1 = "great"
-var s2 = "grate"
-let commonLetters = 0;
-function printCommonLetters(s1,s2)
-{
-for (let i in s1)
-s2.includes (s1[i])? commonLetters++ :false;
 
-console.log(commonLetters)
+function findCommonChars(word1, word2) {
+   let commonChars = "";
+   for(let i = 0; i < word2.length; i++) {
+      if(word1.toLowerCase().includes(word2[i].toLowerCase())) {
+         commonChars += word2[i] + ", " ;
+      }
+   }
+
+console.log("Common letters: " + commonChars);
 }
-printCommonLetters(s1,s2)
+
+findCommonChars("Born","Barn")
