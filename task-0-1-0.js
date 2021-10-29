@@ -1,7 +1,11 @@
-var str1 =  "goof"
-var str2 = "good" 
- function printCommomCharacteristics
+var s1 = "great"
+var s2 = "grate"
+let commonLetters = 0;
+function printCommonLetters(s1,s2)
+{
+for (let i in s1)
+s2.includes (s1[i])? commonLetters++ :false;
 
- for(var i=0; i<str.length; i++)
- console.log(printCommonCharactersitics(str1,str2));
-
+console.log(commonLetters)
+}
+printCommonLetters(s1,s2)
